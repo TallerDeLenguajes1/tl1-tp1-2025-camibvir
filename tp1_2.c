@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <math.h>
-int cuadradoNumero (int numero);
-
+void cuadradoNumeroVacio (int numero);
 
 int main (){
     int numero=3;
-    int cuadrado = cuadradoNumero(numero);
-    printf("a. El cuadrado del numero 3 = %d\n", cuadrado);
+    cuadradoNumeroVacio(numero);
+    
 }
 
-int cuadradoNumero (int numero) {
-    return(numero*numero);
+void cuadradoNumeroVacio (int numero) {
+    int cuadrado = numero*numero;
+    printf("b. El cuadrado del numero 3 = %d\n", cuadrado);
 }
